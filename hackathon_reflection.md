@@ -1,0 +1,7 @@
+# Hackathon #1 Performance Reflection
+
+Participating in Hackathon #1 provided an intensive, hands-on test of our data engineering and rapid analytics capabilities. The biggest technical hurdle our team faced was dealing with inconsistent timestamps and missing telemetry logs in the raw operational datasets, which initially broke our automated ETL aggregation scripts and skewed our exploratory data analysis. 
+
+We resolved this bottleneck by engineering a robust data cleaning pipeline in Python. We implemented forward-fill imputation for minor missing values and standardized all temporal indices to UTC using Pandas datetime modules, ensuring our downstream regression and anomaly detection models ran smoothly without crashing. 
+
+Looking ahead to future hackathons, my primary takeaway regarding teamwork is the need for stricter modular task delegation and version control discipline. While individual coding speed was high, our initial lack of clear feature branching led to minor merge conflicts during model integration. In the next hackathon, we will establish explicit data schema contracts and Git branching protocols on day one to streamline collaboration and reduce integration friction.
